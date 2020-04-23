@@ -51,6 +51,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  opacity: 0;
+  -webkit-animation: aparezcaContent 1s forwards ease-in-out 4s;
+          animation: aparezcaContent 1s forwards ease-in-out 4s;
 }
 
 .header .content-box h1, .header .content-box h3, .header .content-box h5 {
@@ -59,6 +62,32 @@ body {
 
 .pictureInPictureToggleLabel {
   display: none !important;
+}
+
+@-webkit-keyframes aparezcaContent {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) skew(45deg);
+            transform: scale(0.7) skew(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) skew(1);
+            transform: scale(1) skew(1);
+  }
+}
+
+@keyframes aparezcaContent {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) skew(45deg);
+            transform: scale(0.7) skew(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) skew(1);
+            transform: scale(1) skew(1);
+  }
 }
 
 @-webkit-keyframes graduallyBackground {
