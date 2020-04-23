@@ -1,0 +1,55 @@
+.header {
+    border: 2px solid black;
+    background-color: #00000094;
+    background-image: linear-gradient(315deg, #000000c7 3%, #414141d3 174%);
+    height: 140vh;
+    animation: graduallyBackground 5s forwards ease-in-out;
+    position: relative;
+    #miVideo {
+        z-index: -1;
+        width: 100%;
+        position: relative;
+        top: -9rem;
+
+    }
+
+    .content-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        h1, h3, h5{
+            text-align: center;
+        }
+
+    }
+
+        
+}
+
+.pictureInPictureToggleLabel {
+    display: none !important;
+}
+
+
+
+
+@keyframes graduallyBackground {
+    0% {
+
+        background-color: #0000;
+        background-image: linear-gradient(315deg, #0000 3%, #1a1a1a00 174%);
+    }
+    45% {
+
+        background-color: #0000;
+        background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.424) 3%, #1a1a1a00 174%);
+    }
+
+    100% {
+        background-color: #000000d3;
+        background-image: linear-gradient(315deg, #000000ab -19%, #1a1a1a00 174%);
+
+    }
+}

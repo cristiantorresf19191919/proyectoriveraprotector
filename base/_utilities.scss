@@ -1,0 +1,77 @@
+.boton-primario {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+
+}
+
+.caja-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sin-espacio{
+    white-space: nowrap;
+}
+.border-redondo{
+    border-radius: 10px;
+}
+.margen-arriba{
+    margin-top: 1rem;
+}
+
+.fondo-oscuro{
+    background-color: #111;
+}
+.fondo-oscuro-transparente{
+    background-color: rgba(17, 17, 17, 0.781);
+}
+
+.flex-container{
+    display: flex;
+    padding: 6px;
+    width: 100%;
+}
+.border{
+    border: 1px solid yellow;
+}
+
+.flex-spaceBtwn{
+    justify-content: space-between;
+}
+
+.flex-spaceAround{
+    justify-content: space-around;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.padding-sm{
+    padding: 1rem;
+}
+
+.padding-md{
+    padding: 4rem;
+    
+}
+.padding-lg{
+    padding: 6rem;
+}
