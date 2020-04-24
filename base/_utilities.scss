@@ -12,7 +12,8 @@
 }
 
 .boton-primario {
-    background-color: #e50914;
+    // background-color: #e50914;
+    background-color: darkcyan;
     line-height: normal;
     padding: 7px 17px;
     font-weight: 400;
@@ -26,6 +27,10 @@
 
 .alineIzquierda{
     text-align: left !important;
+}
+
+.fullheight{
+    height: 100vh;
 }
 
 .anchofull{
@@ -123,4 +128,10 @@
 
 .fontsize3{
     font-size: 3rem;
+}
+.fontsize52{
+    font-size: 5.2rem;
+}
+.text-center{
+    text-align: center;
 }

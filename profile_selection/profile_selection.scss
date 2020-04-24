@@ -1,0 +1,53 @@
+.list-profiles{
+    @include centreComponente(32%);
+    p{
+        line-height: 45px;
+        // justify-content: center;
+    }
+    width: 85%;
+    // left: 65%;
+}
+.choose-profile{
+    margin: 2em 0;
+    list-style-type: disc;
+}
+.choose-profile li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.choose-profile .profile-name{
+    line-height: 1.2em;
+    min-height: 1.8em;
+    color: #808080;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+    margin: .6em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.profile{
+    margin-right: 2vw;
+    width: 10vw;
+    max-width: 200px;   
+    min-width: 84px;
+    
+}
+.profile-icon{
+    height: 10vw;
+    width: 10vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+    border: 0.3em solid rgba(0, 0, 0, 0.4);
+}
+.list-profiles .avatar-wrapper{
+    position: relative;
+}
+.profile-link a:hover{
+    cursor: pointer;
+    color: #fff;
+}
