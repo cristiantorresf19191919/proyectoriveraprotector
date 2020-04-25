@@ -19,8 +19,10 @@ html {
 body {
     font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 500;
-    /* font-size: 1.8rem; */
-    line-height: 7rem;    
+    /* font-size: 1.8rem; */    
     /* por defecto no se hereda */
     box-sizing: border-box;
+    @include tableta {
+        font-size: 55%;
+    }
 }

@@ -1,34 +1,6 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  /* forzo que la propiedad que herede desde body */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-html {
-  /* 1rem = 16px */
-  /* forzar 10pixeles en porcentaje el navegador por defecto trae 16px*/
-  /* 1 rem = 10px */
-  /* si 16px son 100% */
-  /* cuanto % son 10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  /* font-size: 1.8rem; */
-  line-height: 7rem;
-  /* por defecto no se hereda */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .boton-primario {
-  background-color: darkcyan;
+  background-color: #e50914;
+  /* background-color: darkcyan  ; */
   line-height: normal;
   padding: 7px 17px;
   font-weight: 400;
@@ -49,6 +21,26 @@ body {
 
 .anchofull {
   width: 100%;
+}
+
+.alto1 {
+  height: 1rem;
+}
+
+.alto2 {
+  height: 2rem;
+}
+
+.alto3 {
+  height: 3rem;
+}
+
+.alto4 {
+  height: 4rem;
+}
+
+.alto5 {
+  height: 5rem;
 }
 
 .textoblanco {
@@ -186,21 +178,78 @@ body {
   text-align: center;
 }
 
+.paddingx-sm {
+  padding: 0 2rem;
+}
+
+.margeny {
+  margin: 2rem 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* forzo que la propiedad que herede desde body */
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  /* 1rem = 16px */
+  /* forzar 10pixeles en porcentaje el navegador por defecto trae 16px*/
+  /* 1 rem = 10px */
+  /* si 16px son 100% */
+  /* cuanto % son 10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  /* font-size: 1.8rem; */
+  /* por defecto no se hereda */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 55%;
+  }
+}
+
 .header {
   border: 2px solid black;
-  background-color: #00000094;
-  background-image: linear-gradient(315deg, #000000c7 3%, #414141d3 174%);
+  background-color: #00000077;
+  background-image: linear-gradient(315deg, #0000008e 3%, #414141b6 174%);
   height: 140vh;
   -webkit-animation: graduallyBackground 5s forwards ease-in-out;
           animation: graduallyBackground 5s forwards ease-in-out;
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .header .logo {
+    width: 8rem;
+  }
+}
+
 .header #miVideo {
   z-index: -1;
   width: 100%;
   position: relative;
-  top: -9rem;
+  top: -19rem;
+  height: 69rem;
+}
+
+@media (max-width: 1024px) {
+  .header #miVideo {
+    height: 59rem;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .header .content-box {
@@ -259,8 +308,8 @@ body {
     background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.424) 3%, #1a1a1a00 174%);
   }
   100% {
-    background-color: #000000d3;
-    background-image: linear-gradient(315deg, #000000ab -19%, #1a1a1a00 174%);
+    background-color: #000000bc;
+    background-image: linear-gradient(315deg, #00000094 -19%, #1a1a1a00 174%);
   }
 }
 
@@ -274,14 +323,14 @@ body {
     background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.424) 3%, #1a1a1a00 174%);
   }
   100% {
-    background-color: #000000d3;
-    background-image: linear-gradient(315deg, #000000ab -19%, #1a1a1a00 174%);
+    background-color: #000000bc;
+    background-image: linear-gradient(315deg, #00000094 -19%, #1a1a1a00 174%);
   }
 }
 
 .login {
   position: absolute;
-  top: 28%;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -297,6 +346,23 @@ body {
 
 .login p {
   line-height: 45px;
+}
+
+@media (max-width: 1024px) {
+  .login {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
+            animation: aparezcaContent 1s forwards ease-in-out 2s;
+  }
+  .login h1, .login h3, .login h5 {
+    text-align: center;
+  }
 }
 
 .list-profiles {

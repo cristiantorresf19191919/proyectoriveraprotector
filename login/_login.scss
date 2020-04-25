@@ -1,6 +1,13 @@
 .login{
-    @include centreComponente(28%);
+    @include centreComponente(35%);
     p{
         line-height: 45px;
+    }
+    @include telefono{
+
+    }
+    @include tableta{
+        @include centreComponente(32%);
+
     }
 }
