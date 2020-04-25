@@ -42,12 +42,29 @@
     max-width: 200px;
     min-height: 84px;
     min-width: 84px;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
     border: 0.3em solid rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #333;
 }
 .list-profiles .avatar-wrapper{
     position: relative;
 }
-.profile-link a:hover{
+.choose-profile li a:hover .profile-icon,
+.choose-profile li a:focus .profile-icon,
+.choose-profile li a.focused .profile-icon{
+    cursor: pointer;
+    border: 0.3em solid rgb(255, 255, 255);
+}
+
+.choose-profile li a:hover .profile-name,
+.choose-profile li a:focus .profile-name,
+.choose-profile li a.focused .profile-name{
     cursor: pointer;
     color: #fff;
 }

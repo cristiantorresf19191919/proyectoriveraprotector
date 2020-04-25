@@ -28,7 +28,7 @@ body {
 }
 
 .boton-primario {
-  background-color: darkcyan;
+  background-color: #e50914;
   line-height: normal;
   padding: 7px 17px;
   font-weight: 400;
@@ -357,14 +357,30 @@ body {
   max-width: 200px;
   min-height: 84px;
   min-width: 84px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
   border: 0.3em solid rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
 }
 
 .list-profiles .avatar-wrapper {
   position: relative;
 }
 
-.profile-link a:hover {
+.choose-profile li a:hover .profile-icon,
+.choose-profile li a:focus .profile-icon,
+.choose-profile li a.focused .profile-icon {
+  cursor: pointer;
+  border: 0.3em solid white;
+}
+
+.choose-profile li a:hover .profile-name,
+.choose-profile li a:focus .profile-name,
+.choose-profile li a.focused .profile-name {
   cursor: pointer;
   color: #fff;
 }
