@@ -1,0 +1,56 @@
+.header_white {
+    background-color: #ffffff;
+    height: 140vh;
+    // animation: graduallyBackground 5s forwards ease-in-out;
+    position: relative;
+    .logo{
+        @include tableta{
+            width: 8rem;
+        }
+    }
+
+    .content-box {
+
+        @include centreComponente;
+
+
+    }
+}
+
+
+.pictureInPictureToggleLabel {
+    display: none !important;
+}
+
+@keyframes aparezcaContent {
+    0% {
+        opacity: 0;
+        transform: scale(.7) skew(45deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) skew(1);
+    }
+}
+
+
+// @keyframes graduallyBackground {
+//     0% {
+
+//         background-color: #0000;
+//         background-image: linear-gradient(315deg, #0000 3%, #1a1a1a00 174%);
+//     }
+
+//     45% {
+
+//         background-color: #0000;
+//         background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.424) 3%, #1a1a1a00 174%);
+//     }
+
+//     100% {
+//         background-color: #000000bc;
+//         background-image: linear-gradient(315deg, #00000094 -19%, #1a1a1a00 174%);
+
+//     }
+// }

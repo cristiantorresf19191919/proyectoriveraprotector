@@ -1,0 +1,38 @@
+.regform{
+    @include centreComponente(32%, #333333);
+    p{
+        line-height: 45px;
+    }
+    @include telefono{
+
+    }
+    @include tableta{
+        @include centreComponente(32%,#333333);
+
+    }
+}
+
+.regform h6{
+    display: table-header-grou;
+    font-weight: bold;
+    font-size: 23px;
+    @include telefono{
+        display: inline;
+        font-size: 20px;
+    }
+    @include tableta{
+        display: inline;
+        font-size: 18px;
+    }
+}
+
+.stepIndicator{
+    text-align: inherit;
+    font-size: 13px;
+}
+.contextRow{
+    font-size: 19px;
+}
+.stepHeader-container{
+    text-align: left;
+}

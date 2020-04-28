@@ -47,6 +47,10 @@
   color: white;
 }
 
+.textonegro {
+  color: black;
+}
+
 .centrar-elemento {
   display: block;
   margin: 0 auto;
@@ -109,6 +113,10 @@
 
 .border {
   border: 1px solid yellow;
+}
+
+.border-buttom-grey {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .flex-spaceBtwn {
@@ -186,6 +194,14 @@
   margin: 2rem 0;
 }
 
+.authLink {
+  float: right;
+  color: #333333;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 90px;
+}
+
 *,
 *::after,
 *::before {
@@ -255,10 +271,10 @@ body {
 .header .content-box {
   position: absolute;
   top: 40%;
+  color: white;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: white;
   opacity: 0;
   -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
           animation: aparezcaContent 1s forwards ease-in-out 2s;
@@ -328,13 +344,58 @@ body {
   }
 }
 
-.login {
+.header_white {
+  background-color: #ffffff;
+  height: 140vh;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .header_white .logo {
+    width: 8rem;
+  }
+}
+
+.header_white .content-box {
   position: absolute;
-  top: 35%;
+  top: 40%;
+  color: white;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
+          animation: aparezcaContent 1s forwards ease-in-out 2s;
+}
+
+.header_white .content-box h1, .header_white .content-box h3, .header_white .content-box h5 {
+  text-align: center;
+}
+
+.pictureInPictureToggleLabel {
+  display: none !important;
+}
+
+@keyframes aparezcaContent {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) skew(45deg);
+            transform: scale(0.7) skew(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) skew(1);
+            transform: scale(1) skew(1);
+  }
+}
+
+.login {
+  position: absolute;
+  top: 35%;
   color: white;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
   -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
           animation: aparezcaContent 1s forwards ease-in-out 2s;
@@ -352,10 +413,10 @@ body {
   .login {
     position: absolute;
     top: 32%;
+    color: white;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    color: white;
     opacity: 0;
     -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
             animation: aparezcaContent 1s forwards ease-in-out 2s;
@@ -365,13 +426,83 @@ body {
   }
 }
 
-.list-profiles {
+.regform {
   position: absolute;
   top: 32%;
+  color: #333333;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
+          animation: aparezcaContent 1s forwards ease-in-out 2s;
+}
+
+.regform h1, .regform h3, .regform h5 {
+  text-align: center;
+}
+
+.regform p {
+  line-height: 45px;
+}
+
+@media (max-width: 1024px) {
+  .regform {
+    position: absolute;
+    top: 32%;
+    color: #333333;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
+            animation: aparezcaContent 1s forwards ease-in-out 2s;
+  }
+  .regform h1, .regform h3, .regform h5 {
+    text-align: center;
+  }
+}
+
+.regform h6 {
+  display: table-header-grou;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+@media (max-width: 750px) {
+  .regform h6 {
+    display: inline;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .regform h6 {
+    display: inline;
+    font-size: 18px;
+  }
+}
+
+.stepIndicator {
+  text-align: inherit;
+  font-size: 13px;
+}
+
+.contextRow {
+  font-size: 19px;
+}
+
+.stepHeader-container {
+  text-align: left;
+}
+
+.list-profiles {
+  position: absolute;
+  top: 32%;
   color: white;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
   -webkit-animation: aparezcaContent 1s forwards ease-in-out 2s;
           animation: aparezcaContent 1s forwards ease-in-out 2s;
