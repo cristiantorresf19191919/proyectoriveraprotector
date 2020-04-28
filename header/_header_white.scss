@@ -4,6 +4,7 @@
     // animation: graduallyBackground 5s forwards ease-in-out;
     position: relative;
     .logo{
+        place-self: center;
         @include tableta{
             width: 8rem;
         }
